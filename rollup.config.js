@@ -57,12 +57,12 @@ export default [
         extract: true,
         minimize: true
       }),
-      process.env.NODE_ENV === 'production' && terser(),
+      process.env.NODE_ENV === 'development' && terser(),
     ],
     external: ['react', 'react-dom', 'styled-components', 'etherspot']
   },
   {
-    input: 'dist/esm/types/index.d.ts',
+    input: 'dist/esm/index.d.ts',
     output: [{ file: 'dist/index.d.ts', format: 'esm' }],
     plugins: [dts()],
     external: ['react', 'react-dom', 'styled-components', 'etherspot'],

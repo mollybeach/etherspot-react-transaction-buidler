@@ -53,6 +53,7 @@
   "license": "MIT",
   "dependencies": {
     "@etherspot/prime-sdk": "^1.2.2",
+    "@etherspot/react-transaction-buidler": "^0.26.1",
     "@tippyjs/react": "^4.2.6",
     "autoprefixer": "^10.4.13",
     "axios": "^0.27.2",
@@ -62,7 +63,7 @@
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
     "react-content-loader": "^6.2.1",
-    "react-icons": "^4.4.0",
+    "react-icons": "^4.11.0",
     "react-ios-switch": "^0.1.19",
     "react-router-dom": "^6.15.0",
     "react-spinners": "^0.13.2",

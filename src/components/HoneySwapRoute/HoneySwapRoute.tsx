@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route } from '@lifi/sdk';
 import { ethers } from 'ethers';
-import { BiCheck } from 'react-icons/all';
+import { BiCheck } from 'react-icons/bi';
 
 import { formatAmountDisplay } from '../../utils/common';
 import { CombinedRoundedImages, RoundedImage } from '../Image';

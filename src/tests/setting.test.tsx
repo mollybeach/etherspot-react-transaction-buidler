@@ -5,8 +5,91 @@ import React from 'react';
 import { defaultTheme } from '../utils/theme';
 import { ThemeProvider } from 'styled-components';
 
-jest.mock('react-icons/all', () => {
-  return jest.mock;
+jest.mock('react-icons/ai', () => {
+  return {
+    AiOutlinePlusCircle: jest.fn,
+    AiOutlineSearch: jest.fn,
+  };
+});
+
+jest.mock('react-icons/bi', () => {
+  return {
+    BiCheck: jest.fn,
+  };
+});
+
+jest.mock('react-icons/bs', () => {
+  return {
+    BsClockHistory: jest.fn,
+    BsInfoCircle: jest.fn,
+  };
+});
+
+jest.mock('react-icons/cg', () => {
+  return {
+    CgSandClock: jest.fn,
+  };
+});
+
+jest.mock('react-icons/fa', () => {
+  return {
+    FaClipboardCheck: jest.fn,
+    FaRegClipboard: jest.fn,
+    FaSignature: jest.fn,
+  };
+});
+
+jest.mock('react-icons/fc', () => {
+  return {
+    FcCheckmark: jest.fn,
+  };
+});
+
+jest.mock('react-icons/hi', () => {
+  return {
+    HiCheck: jest.fn,
+    HiChevronDown: jest.fn,
+    HiChevronUp: jest.fn,
+    HiOutlinePencilAlt: jest.fn,
+    HiOutlineUser: jest.fn,
+  };
+});
+
+jest.mock('react-icons/io', () => {
+  return {
+    IoChevronBackCircleOutline: jest.fn,
+    IoClose: jest.fn,
+    IoColorPaletteOutline: jest.fn,
+    IoCopyOutline: jest.fn,
+    IoGlobeOutline: jest.fn,
+    IoMdCheckmark: jest.fn,
+    IoWalletOutline: jest.fn,
+  };
+});
+
+jest.mock('react-icons/io5', () => {
+  return {
+    IoCopyOutline: jest.fn,
+    IoMdCheckmark: jest.fn,
+  };
+});
+
+jest.mock('react-icons/md', () => {
+  return {
+    MdOutlineDashboardCustomize: jest.fn,
+    MdOutlineInfo: jest.fn,
+    MdOutlineKeyboardArrowDown: jest.fn,
+    MdOutlineKeyboardArrowUp: jest.fn,
+    MdOutlineSettings: jest.fn,
+  };
+});
+
+jest.mock('react-icons/tb', () => {
+  return {
+    TbCopy: jest.fn,
+    TbLogout: jest.fn,
+    TbWallet: jest.fn,
+  };
 });
 
 jest.mock('../components/History/index.ts', () => {
